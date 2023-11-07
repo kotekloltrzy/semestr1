@@ -21,5 +21,5 @@ losowa_lista(10, 1, 100)
 Zadanie domowe:
 lista = generuj(20, 0, 100)
 print(lista)
-napisać funkcję za pomocą pentli for bez printa by się wygenerowała lista
+napisać funkcję za pomocą pentli for by się wygenerowała lista
 """

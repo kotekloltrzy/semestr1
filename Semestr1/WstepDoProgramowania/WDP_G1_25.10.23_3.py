@@ -1,12 +1,12 @@
 import random
 
 
-def i(ilosc, od, do):
+def i(od, do):
     lista = []
+    ilosc = int(input("Podaj ilosc wyrazow w liscie: "))
     for j in range(ilosc):
         lista.append(random.randint(od, do))
-    print(lista)
     return lista
 
 
-i(10, 0, 9)
+print(i(0, 9))

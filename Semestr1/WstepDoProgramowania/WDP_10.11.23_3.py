@@ -1,8 +1,12 @@
 def czy_nalezy(element, lista):
+    e = 0
     for e in lista:
         if e == element:
             return True
-        else:
-            return False
+        elif e != element:
+            e = e + 1
+    if e > len(lista):
+        return False
 
-#zrobić tak żeby wyszukać element w liście i dać znać czy w niej jest czy nie
+
+print(czy_nalezy(3, [1, 3, 7]))

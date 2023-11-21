@@ -1,13 +1,11 @@
-lista1 = [5, 7, 2, 5, 8, 4]
+lista1 = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 10]
 
 
 def unikalnosc(lista):
     wynik = []
-    for item in lista:
-        if not czy_nalezy(wynik, item):
-            for e in wynik:
-                if e == item:
-                    wynik.append(item)
+    for element in lista:
+        if element not in wynik:
+            wynik.append(element)
     return wynik
 
 

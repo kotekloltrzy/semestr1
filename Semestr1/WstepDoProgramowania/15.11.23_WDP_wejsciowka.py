@@ -35,11 +35,15 @@ ile_ujemnych(lista1)
 print("czy zawiera")
 
 
-def czy_zawiera(lista, podlista):
-    for item in podlista:
-        if not czy_nalezy(lista, item):
-            return False
-    return True
-
+def czy_zawiera(lis1, lis2):
+    ile_zawiera = 0
+    for x2 in lis2:
+        for x1 in lis1:
+            if x2 == x1:
+                ile_zawiera += 1
+    if ile_zawiera == len(lis2):
+        return True
+    else:
+        return False
 
 print(czy_zawiera(lista1, lista2))

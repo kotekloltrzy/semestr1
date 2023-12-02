@@ -53,3 +53,54 @@ def czy_zawiera(lista, podlista):
 
 print(czy_zawiera(lista,podlista))
 ```
+## unikalność
+```python
+def unikalnosc(lista):
+    unikalana = []
+    for i in lista:
+        if i not in unikalana:
+            unikalana.append(i)
+
+    return unikalana
+
+print(unikalnosc(lista1))
+```
+## dzielniki
+```python
+def dzielniki(liczba):
+    wynik = []
+    for i in range(1, liczba+1):
+        if liczba % i == 0:
+            wynik.append(i)
+    return wynik
+
+print(dzielniki(10))
+```
+## suma elementów listy
+```python
+def suma(lista):
+    wynik = 0
+    for i in lista:
+        wynik = wynik + i
+    return wynik
+```
+## czy liczba jest doskonała
+```python
+def czy_doskonala(liczba):
+    d = dzielniki(liczba)
+    s = suma(d)
+    return s == liczba
+```
+## wszystkie liczby doskonałe od 1 do n
+```python
+def wszystkie_doskonale(n):
+    for i in range(1, n):
+        if czy_doskonala(i):
+            print(i)
+```
+## czy liczba jest pierwsza
+```python
+def liczba_pierwsza(liczba):
+    if dzielniki(liczba) == [1]:
+        return liczba
+```

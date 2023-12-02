@@ -20,9 +20,12 @@ def odleglosc(lista, a):
 
 
 def rozne_domy(lista):
+    wynik = []
     for a in lista:
-        print("dla domu:", a, "odległość wynosi:", suma(odleglosc(lista, a)))
+        wynik.append([suma(odleglosc(lista, a)), a])
+    return wynik
 
 
-rozne_domy(domy)
+print("Odległość, numer domu:", min(rozne_domy(domy)))
+
 ```

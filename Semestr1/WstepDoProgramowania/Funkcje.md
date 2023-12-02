@@ -43,16 +43,13 @@ print(czy_nalezy(element,lista))
 ## czy zawiera
 ```python
 def czy_zawiera(lista, podlista):
-    ile_zawiera = 0
+    ile_nalezy = 0
     for e in podlista:
-        for i in lista:
-            if e == i:
-                ile_zawiera += 1
-                break
-    if ile_zawiera == len(podlista):
-        return True
-    else:
-        return False
+        if czy_nalezy(e, lista):
+            ile_nalezy += 1
+        if ile_nalezy == len(podlista):
+            return True
+    return False
 
 print(czy_zawiera(lista,podlista))
 ```

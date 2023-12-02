@@ -26,7 +26,7 @@ def minmax(lista):
     lista.sort()
     print(f'({lista[0]}, {lista[-1]})')
 
-minmax([lista)
+minmax([lista])
 ```
 ## czy należy
 ```python

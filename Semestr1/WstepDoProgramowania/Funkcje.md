@@ -49,7 +49,7 @@ def czy_zawiera(lista, podlista):
             if e == i:
                 ile_zawiera += 1
                 break
-    if ile_zawiera == len(lis2):
+    if ile_zawiera == len(podlista):
         return True
     else:
         return False

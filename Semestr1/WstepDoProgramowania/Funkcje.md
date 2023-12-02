@@ -37,7 +37,7 @@ def czy_nalezy(element, lista):
     return False
 
 
-print(czy_nalezy(lista))
+print(czy_nalezy(element,lista))
 ```
 
 ## czy zawiera

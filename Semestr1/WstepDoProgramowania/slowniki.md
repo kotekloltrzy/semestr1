@@ -49,3 +49,24 @@ def czestosc(lista):
 print(czestosc(lista1))
 
 ```
+```python
+lista1 = "1235345123543kotek"
+
+
+def liczba_liczb(lista):
+    wynik = {}
+    for i in lista:
+        if i.isnumeric():
+            if i in wynik:
+                wynik[i] += 1
+            else:
+                wynik[i] = 1
+        else:
+            print(f'{i} nie jest liczbą')
+
+    return wynik
+
+
+print(liczba_liczb(lista1))
+
+```

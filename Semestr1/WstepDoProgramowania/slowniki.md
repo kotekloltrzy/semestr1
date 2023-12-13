@@ -70,3 +70,37 @@ def liczba_liczb(lista):
 print(liczba_liczb(lista1))
 
 ```
+```python
+f = open("C:\\Users\local\Documents\wdp_jest_najlepsze.txt", "r")
+
+print(f.read())
+
+f = open("C:\\Users\local\Documents\wdp_jest_najlepsze.txt", "r")
+
+wynik = []
+
+for x in f:
+    for a in x:
+        wynik.append(a)
+
+    def same_literki(litera):
+        if len(litera) != 1:
+            return False
+        for i in litera:
+            return ('A' <= i <= 'Z') or ('a' <= i <= 'z')
+
+
+    def czestosc(lista):
+        wynik = {}
+        for e in lista:
+            if same_literki(e):
+                if e in wynik:
+                    wynik[e] += 1
+                else:
+                    wynik[e] = 1
+        return wynik
+
+print(czestosc(wynik))
+
+f.close()
+```

@@ -71,11 +71,11 @@ print(liczba_liczb(lista1))
 
 ```
 ```python
-f = open("C:\\Users\local\Documents\wdp_jest_najlepsze.txt", "r")
+f = open("D:\\file.txt", "r")
 
 print(f.read())
 
-f = open("C:\\Users\local\Documents\wdp_jest_najlepsze.txt", "r")
+f = open("D:\\file.txt", "r")
 
 wynik = []
 
@@ -105,25 +105,26 @@ print(czestosc(wynik))
 f.close()
 ```
 ```python
-f = open("C:\\Users\local\Documents\wdp_jest_najlepsze.txt", "r")
+f = open("D:\\file.txt", "r")
 wynik = []
 for x in f:
     wynik += x.split()
 print(wynik)
 
 def liczba_liczb(lista):
-    wynik = {}
+    wyrazy = {}
     for i in lista:
         if i.isnumeric():
-            if i in wynik:
-                wynik[i] += 1
-            else:
-                wynik[i] = 1
+            for e in i:
+                if e in wyrazy:
+                    wyrazy[e] += 1
+                else:
+                    wyrazy[e] = 1
         else:
-            print(f'{i} nie jest liczbą')
+            print(f'"{i}" nie jest liczbą')
 
-    return wynik
-
+    return wyrazy
 
 print(liczba_liczb(wynik))
+
 ```

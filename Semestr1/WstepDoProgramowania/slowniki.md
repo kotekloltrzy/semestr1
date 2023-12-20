@@ -31,7 +31,7 @@ def same_literki(litera):
     if len(litera) != 1:
         return False
     for i in litera:
-        return('A' <= i and i <= 'Z') or ('a' <= i and i <= 'z')
+        return('A' <= i <= 'Z') or ('a' <= i <= 'z')
 
 
 def czestosc(lista):
